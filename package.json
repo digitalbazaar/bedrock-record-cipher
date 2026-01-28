@@ -1,0 +1,45 @@
+{
+  "name": "@bedrock/record-cipher",
+  "version": "0.0.1-0",
+  "type": "module",
+  "description": "Bedrock Record Cipher",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*.js"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-record-cipher.git"
+  },
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-record-cipher/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-record-cipher",
+  "dependencies": {
+    "cborg": "^5.0.1",
+    "jose": "^6.2.2"
+  },
+  "peerDependencies": {
+    "@bedrock/core": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-digitalbazaar": "^5.2.0",
+    "eslint-plugin-jsdoc": "^50.6.3",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "jsdoc": "^4.0.4",
+    "jsdoc-to-markdown": "^9.1.1"
+  }
+}
