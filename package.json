@@ -1,6 +1,6 @@
 {
   "name": "@bedrock/record-cipher",
-  "version": "0.0.1-0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Bedrock Record Cipher",
   "license": "SEE LICENSE IN LICENSE.md",
