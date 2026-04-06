@@ -1,7 +1,7 @@
 Bedrock Non-Commercial License v1.0
 ===================================
 
-Copyright (c) 2011-2021 Digital Bazaar, Inc.
+Copyright (c) 2011-2016 Digital Bazaar, Inc.
 All rights reserved.
 
 Summary
@@ -56,7 +56,7 @@ DEFINITIONS
 ===========
 
 * Product - The Bedrock software and any modules associated with Bedrock
-  where Digital Bazaar, Inc. owns the copyright.
+where Digital Bazaar, Inc. owns the copyright.
 
 CONDITIONS
 ==========
