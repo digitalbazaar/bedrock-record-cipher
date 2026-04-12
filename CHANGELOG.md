@@ -1,6 +1,6 @@
 # bedrock-record-cipher ChangeLog
 
-## 1.0.1 - 2026-04-dd
+## 1.0.1 - 2026-04-11
 
 ### Fixed
 - Fix `currentKekId` validation.
