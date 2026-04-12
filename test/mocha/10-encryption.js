@@ -44,6 +44,7 @@ const testParameters = [
   {
     title: 'aes256 encryption w/cbor encoding',
     encryptConfig: {
+      currentKekId: 'urn:test:aes256',
       encoding: 'json',
       keks: [{
         id: 'urn:test:aes256',
