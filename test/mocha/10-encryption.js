@@ -115,5 +115,22 @@ for(const {title, encryptConfig, record, shouldEncrypt} of testParameters) {
       decrypted.should.not.include.key('encryptedSecrets');
       decrypted.should.deep.equal(record);
     });
+
+    if(encryptConfig.kekLoader) {
+      it('ensures lazy-load is only called once', async () => {
+        let calls = 0;
+        const modifiedConfig = {...encryptConfig};
+        const {kekLoader} = modifiedConfig;
+        modifiedConfig.kekLoader = (...args) => {
+          calls++;
+          return kekLoader(...args);
+        };
+        recordCipher = await RecordCipher.create(modifiedConfig);
+        for(let i = 0; i < 3; ++i) {
+          await recordCipher.encryptRecordSecrets({record});
+        }
+        calls.should.equal(1);
+      });
+    }
   });
 }
