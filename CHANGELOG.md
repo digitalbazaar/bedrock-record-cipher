@@ -1,6 +1,6 @@
 # bedrock-record-cipher ChangeLog
 
-## 1.1.0 - 2026-04-dd
+## 1.1.0 - 2026-04-13
 
 ### Added
 - Add optional `kekLoader` parameter to `RecordCipher` to allow lazy-loading
