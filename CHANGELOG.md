@@ -1,6 +1,6 @@
 # bedrock-record-cipher ChangeLog
 
-## 1.1.1 - 2026-04-dd
+## 1.1.1 - 2026-04-13
 
 ### Fixed
 - Set a hard maximum (1000) on lazy-loaded KEKs using an LRU-cache to
