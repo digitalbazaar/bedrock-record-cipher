@@ -1,5 +1,14 @@
 # bedrock-record-cipher ChangeLog
 
+## 1.1.1 - 2026-04-dd
+
+### Fixed
+- Set a hard maximum (1000) on lazy-loaded KEKs using an LRU-cache to
+  prevent memory exhaustion. If an application requires more than 1000
+  lazy-loaded KEKs to be concurrently in memory, it can implement that
+  externally and use the `kekLoader()` option to call into this larger,
+  persistent storage area.
+
 ## 1.1.0 - 2026-04-13
 
 ### Added
