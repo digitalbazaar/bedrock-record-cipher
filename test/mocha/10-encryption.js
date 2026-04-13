@@ -60,6 +60,31 @@ const testParameters = [
       moreNonSecrets: 'baz'
     },
     shouldEncrypt: true
+  },
+  {
+    title: 'aes256 encryption w/kekLoader',
+    encryptConfig: {
+      currentKekId: 'urn:test:aes256',
+      encoding: 'json',
+      async kekLoader({id}) {
+        if(id === 'urn:test:aes256') {
+          return {
+            secretKeyMultibase:
+              'uogH3ERq9FRYOV8IuUiD2gKZs_qN6SLU-6RtbBUfzqQwGdg'
+          };
+        }
+        return null;
+      }
+    },
+    record: {
+      secrets: {a: 1, b: 'foo', c: [1]},
+      nonSecrets: {
+        c: 2,
+        d: [2]
+      },
+      moreNonSecrets: 'baz'
+    },
+    shouldEncrypt: true
   }
 ];
 
