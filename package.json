@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-record-cipher",
   "dependencies": {
+    "@digitalbazaar/lru-memoize": "^4.0.0",
     "cborg": "^5.0.1",
     "jose": "^6.2.2"
   },
