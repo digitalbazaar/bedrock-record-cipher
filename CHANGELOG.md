@@ -1,5 +1,12 @@
 # bedrock-record-cipher ChangeLog
 
+## 1.2.0 - 2026-04-dd
+
+### Added
+- Allow the current KEK to be lazily loaded (on demand) instead of
+  requiring it to be present at the time that `setCurrentKek()` is
+  called.
+
 ## 1.1.1 - 2026-04-13
 
 ### Fixed
