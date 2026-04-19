@@ -1,6 +1,6 @@
 # bedrock-record-cipher ChangeLog
 
-## 1.2.0 - 2026-04-dd
+## 1.2.0 - 2026-04-18
 
 ### Added
 - Allow the current KEK to be lazily loaded (on demand) instead of
